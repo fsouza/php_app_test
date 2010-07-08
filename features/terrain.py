@@ -7,5 +7,5 @@ def setup_browser():
     world.root_url = 'http://localhost/php_app_test/'
 
 @after.all
-def teardown_browser():
+def teardown_browser(total):
     world.browser.quit()
