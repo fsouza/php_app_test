@@ -9,7 +9,7 @@ Feature: Login
     And I fill the username field with <login>
     And I fill the password field with <password>
     And I click the "Log in" button
-    Then I should see the <message> message
+    Then I see the message <message>
 
   Examples:
     | login | password | message                                  |
