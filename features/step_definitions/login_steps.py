@@ -15,7 +15,7 @@ def and_i_fill_the_username_field_with_login(step, login):
     username_field = world.browser.find_element_by_xpath('//input[@name="username"]')
     username_field.send_keys(login)
 
-@step(u'And I fill the password field with <password>')
+@step(u'And I fill the password field with (.*)')
 def and_i_fill_the_password_field_with_password(step, password):
     password_field = world.browser.find_element_by_xpath('//input[@name="password"]')
     password_field.send_keys(password)
@@ -25,6 +25,6 @@ def and_i_click_the_group1_button(step, button_value):
     button = world.browser.find_element_by_xpath('//input[@value="%s"]' %(button_value))
     button.click()
 
-@step(u'Then I see the message <message>')
+@step(u'Then I see the message (.*)')
 def then_i_see_the_message_message(step, message):
     assert message in world.browser.get_page_source()
