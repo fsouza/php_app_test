@@ -11,17 +11,17 @@ def when_i_navigate_to_the_login_page(step):
     login_url = world.root_url + 'login.html'
     world.browser.get(login_url)
 
-@step(u'And I fill the username field with (.*)')
+@step(u'And fill the username field with (.*)')
 def and_i_fill_the_username_field_with_login(step, login):
     username_field = world.browser.find_element_by_xpath('//input[@name="username"]')
     username_field.send_keys(login)
 
-@step(u'And I fill the password field with (.*)')
+@step(u'And fill the password field with (.*)')
 def and_i_fill_the_password_field_with_password(step, password):
     password_field = world.browser.find_element_by_xpath('//input[@name="password"]')
     password_field.send_keys(password)
 
-@step(u'And I click the "(.*)" button')
+@step(u'And click the "(.*)" button')
 def and_i_click_the_group1_button(step, button_value):
     button = world.browser.find_element_by_xpath('//input[@value="%s"]' %(button_value))
     button.click()

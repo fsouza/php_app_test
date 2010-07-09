@@ -6,9 +6,9 @@ Feature: Login
   Scenario Outline: Successful and unsuccessful login
     Given that there is a user registered in the system with the username "admin" and the password "123"
     When I navigate to the login page
-    And I fill the username field with <login>
-    And I fill the password field with <password>
-    And I click the "Log in" button
+    And fill the username field with <login>
+    And fill the password field with <password>
+    And click the "Log in" button
     Then I see the message <message>
 
   Examples:
