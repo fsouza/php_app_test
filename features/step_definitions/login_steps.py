@@ -7,7 +7,7 @@ def given_that_is_a_user_registered_in_the_system_with_the_username_group1_and_t
 
 @step(u'When I navigate to the login page')
 def when_i_navigate_to_the_login_page(step):
-    login_url = world.root_url + 'login.php'
+    login_url = world.root_url + 'login.html'
     world.browser.get(login_url)
 
 @step(u'And I fill the username field with (.*)')
