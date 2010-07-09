@@ -2,7 +2,8 @@
 from lettuce import *
 
 @step(u'Given that is a user registered in the system with the username "admin" and the password "123"')
-def given_that_is_a_user_registered_in_the_system_with_the_username_group1_and_the_password_group2(step):
+def do_nothing(step):
+    '''There is nothing that Lettuce can do to guarantee this sentence'''
     pass
 
 @step(u'When I navigate to the login page')
