@@ -4,7 +4,7 @@ Feature: Login
   I want to login in the system
 
   Scenario Outline: Successful and unsuccessful login
-    Given that is a user registered in the system with the username "admin" and the password "123"
+    Given that there is a user registered in the system with the username "admin" and the password "123"
     When I navigate to the login page
     And I fill the username field with <login>
     And I fill the password field with <password>

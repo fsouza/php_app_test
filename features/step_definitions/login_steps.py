@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from lettuce import *
 
-@step(u'Given that is a user registered in the system with the username "admin" and the password "123"')
+@step(u'Given that there is a user registered in the system with the username "admin" and the password "123"')
 def do_nothing(step):
     '''There is nothing that Lettuce can do to guarantee this sentence'''
     pass
